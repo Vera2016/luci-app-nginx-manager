@@ -18,11 +18,9 @@
 	<% local isempty = true for i, k in ipairs(self:cfgsections()) do -%>
 		<%- section = k; isempty = false -%>
 
-		<div class="hidden-counter" style="display:none;"></div>
-    
 		<% if not self.anonymous then -%>
-			<div class="cbi-section-remove" style="display: flex;flex-flow: row nowrap;justify-content: space-between;">
-			    <span style="font-size:1.15rem;font-weight:bold;letter-spacing:0.1rem;padding:1rem 1.5rem;"><%=section:upper()%></span>
+			<div class="cbi-section-remove" style="display: flex;flex-flow: row nowrap;justify-content: space-between; background-color:#333333">
+			    <span style="font-size:1.15rem;color:#ccc;font-weight:bold;letter-spacing:0.1rem;padding:1rem 1.5rem;"><%=section:upper()%></span>
 				<input type="submit" name="cbi.rts.<%=self.config%>.<%=k%>" onclick="this.form.cbi_state='del-section'; return true" value="<%:Delete%>" class="cbi-button" />
 			</div>
 		<%- end %>
