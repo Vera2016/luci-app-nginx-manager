@@ -19,8 +19,8 @@
 		<%- section = k; isempty = false -%>
 
 		<% if not self.anonymous then -%>
-			<div class="cbi-section-remove" style="display: flex;flex-flow: row nowrap;justify-content: space-between; background-color:#333333">
-			    <span style="font-size:1.15rem;color:#ccc;font-weight:bold;letter-spacing:0.1rem;padding:1rem 1.5rem;"><%=section:upper()%></span>
+			<div class="cbi-section-remove cbi-section" style="display: flex;flex-flow: row nowrap;justify-content: space-between;">
+			    <span style="font-size:1.15rem;font-weight:bold;letter-spacing:0.1rem;padding:1rem 1.5rem;"><%=section:upper()%></span>
 				<input type="submit" name="cbi.rts.<%=self.config%>.<%=k%>" onclick="this.form.cbi_state='del-section'; return true" value="<%:Delete%>" class="cbi-button" />
 			</div>
 		<%- end %>
@@ -31,7 +31,6 @@
 					<% if tab == self.selected_tab then %><input type="hidden" id="tab.<%=self.config%>.<%=section%>" name="tab.<%=self.config%>.<%=section%>" value="<%=tab%>" /><% end %>
 			</li>
 		<% end -%>
-
 
 		<fieldset class="cbi-section-node<% if self.tabs then %> cbi-section-node-tabbed<% end %>" id="cbi-<%=self.config%>-<%=section%>" style="border-bottom: 1px solid #ddd;border-radius: 0px">
 			<%+cbi/ucisection%>
