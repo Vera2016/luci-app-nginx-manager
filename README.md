@@ -1,7 +1,8 @@
 ### 说明如下
 
-1. 使用openwrt/luci编译原项目会缺少tabmenu.htm，运行会报错，对此问题进行了修改。（使用lede项目的luci好像没有问题）
-2. 汉化不显示问题也修改了下
+1. 原项目地址：https://github.com/sundaqiang/openwrt-packages
+2. 使用openwrt/luci编译原项目会缺少tabmenu.htm，运行会报错，对此问题进行了修改。（使用lede项目的luci好像没有问题）
+3. 汉化不显示问题也修改了下
 
 ---------------------------------------下面是原项目README.md------------------------------------
 # luci-app-nginx-manager（Nginx管理器）
