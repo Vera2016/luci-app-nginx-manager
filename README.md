@@ -1,18 +1,23 @@
+### è¯´æ˜å¦‚ä¸‹
 
-# luci-app-nginx-manager£¨Nginx¹ÜÀíÆ÷£©
+1. ä½¿ç”¨openwrt/luciç¼–è¯‘åŸé¡¹ç›®ä¼šç¼ºå°‘tabmenu.htmï¼Œè¿è¡Œä¼šæŠ¥é”™ï¼Œå¯¹æ­¤é—®é¢˜è¿›è¡Œäº†ä¿®æ”¹ã€‚ï¼ˆä½¿ç”¨ledeé¡¹ç›®çš„luciå¥½åƒæ²¡æœ‰é—®é¢˜ï¼‰
+2. æ±‰åŒ–ä¸æ˜¾ç¤ºé—®é¢˜ä¹Ÿä¿®æ”¹äº†ä¸‹
 
-¸ü·½±ãµÄ¹ÜÀíopenwrtµÄnginx
+---------------------------------------ä¸‹é¢æ˜¯åŸé¡¹ç›®README.md------------------------------------
+# luci-app-nginx-managerï¼ˆNginxç®¡ç†å™¨ï¼‰
 
-### ×¢ÒâÊÂÏî
-1. Ìæ´úÄ¬ÈÏµÄuhttpd×öÎªÂ·ÓÉºóÌ¨µÄweb·şÎñÆ÷
-2. ²å¼şÒÀÀµ+luci-nginx +luci-ssl-nginx +luci-ssl-openssl£¬²¢ÇÒ»á¿ªÆôÂ·ÓÉºóÌ¨µÄhttps¹¦ÄÜ
-3. ²å¼ş»áÌæ´úÄ¬ÈÏµÄuhttpd£¬µ«²¢²»»áÉ¾³ıuhttpd£¬Èç¹ûÄãĞèÒªÉ¾³ıuhttpd£¬ĞèÔÚ±àÒëÇ°ÔÚ¸ùÄ¿Â¼Ö´ĞĞÒÔÏÂ²Ù×÷£º
+æ›´æ–¹ä¾¿çš„ç®¡ç†openwrtçš„nginx
+
+### æ³¨æ„äº‹é¡¹
+1. æ›¿ä»£é»˜è®¤çš„uhttpdåšä¸ºè·¯ç”±åå°çš„webæœåŠ¡å™¨
+2. æ’ä»¶ä¾èµ–+luci-nginx +luci-ssl-nginx +luci-ssl-opensslï¼Œå¹¶ä¸”ä¼šå¼€å¯è·¯ç”±åå°çš„httpsåŠŸèƒ½
+3. æ’ä»¶ä¼šæ›¿ä»£é»˜è®¤çš„uhttpdï¼Œä½†å¹¶ä¸ä¼šåˆ é™¤uhttpdï¼Œå¦‚æœä½ éœ€è¦åˆ é™¤uhttpdï¼Œéœ€åœ¨ç¼–è¯‘å‰åœ¨æ ¹ç›®å½•æ‰§è¡Œä»¥ä¸‹æ“ä½œï¼š
 
 ```bash
 sed -i 's/+uhttpd +uhttpd-mod-ubus //g' feeds/luci/collections/luci/Makefile
 ```
 
-### Ğ§¹ûÕ¹Ê¾
+### æ•ˆæœå±•ç¤º
 ![nginx-manager][1]
 
   [1]: https://raw.githubusercontent.com/sundaqiang/openwrt-packages/master/img/nginx-manager.png
