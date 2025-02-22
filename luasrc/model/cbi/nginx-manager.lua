@@ -1,13 +1,13 @@
 local fs = require "nixio.fs"
-local m = Map("nginx-manager",translate("Nginx Manager"), translate("A simple Nginx manager") .. [[<br /><br /><a href="https://github.com/sundaqiang/openwrt-packages" target="_blank">Powered by sundaqiang</a>]])
+local m = Map("nginx-manager",translate("Nginx Manager"), translate("A simple Nginx manager") .. [[<a href="https://github.com/sundaqiang/openwrt-packages" target="_blank">  Powered by sundaqiang</a>]])
 s = m:section(TypedSection, "nginx", translate("Web site list"))
 s.template = "nginx-manager/index"
 s.addremove = true
 s.anonymous = false
 s:tab("general", translate("General Info"))
 s:tab("server", translate("Configuration File"))
-s:taboption("general", DummyValue, "name", translate("name"))
-s:taboption("general", DummyValue, "filepath", translate("File Path"))
+s:taboption("general", DummyValue, "name", translate("name") .. " : ")
+s:taboption("general", DummyValue, "filepath", translate("File Path") .. " : ")
 file=s:taboption("server", TextValue, "")
 file.template = "cbi/tvalue"
 file.rows = 25
